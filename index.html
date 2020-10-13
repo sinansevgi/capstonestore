@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Books and Scrolls</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">
+            <svg class="bi bi-book" fill="currentColor" height="1em" viewBox="0 0 16 16" width="1em"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                        fill-rule="evenodd"/>
+            </svg>
+            Books and Scrolls</a>
+        <button aria-controls="navbarCollapsedMenu" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarCollapsedMenu" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"><svg class="bi bi-list" fill="currentColor" height="1em" viewBox="0 0 16 16"
+                                               width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  fill-rule="evenodd"/>
+          </svg></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapsedMenu">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Shopping Cart</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="jumbotron jumbotron-fluid text-center mb-0">
+        <h1>Books and Scrolls</h1>
+        <p>Welcome to Novigrads biggest bookstore.</p>
+        <form>
+            <div class="form-group">
+                <input class="form-control mx-auto"
+                       placeholder="Search Books, You can use book title, isbn, author or publisher to search books"
+                       type="search">
+                <button class="btn btn-lg btn-dark my-2 " type="submit">Search</button>
+            </div>
+        </form>
+    </section>
+    <section class="new border-bottom pb-5 bg-clear d-none d-md-block bg-white">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>New Books:</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="carousel slide" data-ride="carousel" id="carouselNew">
+                    <ol class="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#carouselNew"></li>
+                        <li data-slide-to="1" data-target="#carouselNew"></li>
+                        <li data-slide-to="2" data-target="#carouselNew"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active mx-auto">
+                            <img alt="" class="carousel-image" src="./assets/images/hero/quo-vadis-hero.jpg"/>
+                            <div class="carousel-caption">
+                                <img alt="Quo Vadis Cover"
+                                     src="./assets/images/bookcovers/henryk-sienkiewicz_quo-vadis.jpg"/>
+                                <h2>Quo Vadis</h2>
+                                <h3>Henryk Sienkiewicz</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img alt="" class="carousel-image" src="./assets/images/hero/pierre-and-jean-hero.jpg"/>
+                            <div class="carousel-caption">
+                                <img alt="Quo Vadis Cover"
+                                     src="./assets/images/bookcovers/guy-de-maupassant_pierre-and-jean.jpg"/>
+                                <h2>Pierre and Jean</h2>
+                                <h3>Guy de Muapassant</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img alt="" class="carousel-image" src="./assets/images/hero/hadji-murad-hero.jpg"/>
+                            <div class="carousel-caption">
+                                <img alt="Quo Vadis Cover"
+                                     src="./assets/images/bookcovers/leo-tolstoy_hadji-murad.jpg"/>
+                                <h2>Hadji Murad</h2>
+                                <h3>Leo Tolstoy</h3>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" data-slide="prev" href="#carouselNew" role="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next" href="#carouselNew" role="button">
+                        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+    </section>
+    <section class="shop-content container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="dep-name">Fiction</h3>
+                <div class="carousel slide row" data-ride="fiction" id="fiction">
+                    <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev"
+                                                               href="#fiction"
+                                                               role="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a></div>
+                    <div class="col-lg-10">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card-deck row" id="deck1">
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/robert-louis-stevenson_kidnapped.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">Kidnapped</h6>
+                                            <p class="mb-1 pb-3">Robert Louis Stevenson</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/robert-louis-stevenson_treasure-island.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">Treasure Island</h6>
+                                            <p class="mb-1 pb-3">Robert Louis Stevenson</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 d-md-none mb-3"></div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/fyodor-sologub_the-created-legend.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">The Created Legend</h6>
+                                            <p class="mb-1 pb-3">Fyodor Sologub</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/fyodor-sologub_short-fiction.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">Short Fiction</h6>
+                                            <p class="mb-1 pb-3">Fyodor Sologub</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck row" id="deck2">
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/fyodor-sologub_the-little-demon.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">Little Demon</h6>
+                                            <p class="mb-1 pb-3">Fyodor Sologub</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/lewis-carroll_a-tangled-tale.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">A Tangled Tale</h6>
+                                            <p class="mb-1 pb-3">Lewis Caroll</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$7</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 d-md-none mb-3"></div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/lewis-carroll_alices-adventures-in-wonderland.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">Alice's Adventures in
+                                                Wonderland</h6>
+                                            <p class="mb-1 pb-3">Lewis Carroll</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/selma-lagerlof_the-wonderful-adventures-of-nils.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">The Wonderful Adventures of
+                                                Nils</h6>
+                                            <p class="mb-1 pb-3">Selma Lagerlöf</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block col-lg-1"><a class="carousel-control-next" data-slide="next"
+                                                               href="#fiction"
+                                                               role="button">
+                        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="dep-name">Non-Fiction</h3>
+                <div class="carousel slide row" data-ride="non-fiction" id="non-fiction">
+                    <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev"
+                                                               href="#non-fiction"
+                                                               role="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a></div>
+                    <div class="col-lg-10">
+                        <div class="carousel-inner">
+
+
+                            <div class="carousel-item active">
+
+                                <div class="card-deck row id=" deck3
+                                ">
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/thomas-bulfinch_bulfinchs-mythology.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">Bulfinch's Mythology</h6>
+                                        <p class="mb-1 pb-3">Thomas Bulfinch</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/lytton-strachey_queen-victoria.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">Queen Victoria</h6>
+                                        <p class="mb-1 pb-3">Lytton Strachey</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-md-none mb-3"></div>
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/lytton-strachey_eminent-victorians.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">Eminent Victorians</h6>
+                                        <p class="mb-1 pb-3">Lytton Strachey</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/benjamin-franklin_the-autobiography-of-benjamin-franklin.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">The Autobiography of Benjamin
+                                            Franklin</h6>
+                                        <p class="mb-1 pb-3">Benjamin Franklin</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$2</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card-deck row" id="deck4">
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/julius-caesar_commentaries-on-the-gallic-war.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">Commentaries on the Gallic
+                                            War</h6>
+                                        <p class="mb-1 pb-3">Julius Caesar</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$23</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/frederick-douglass_narrative-of-the-life-of-frederick-douglass.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">Narrative of the Life of
+                                            Frederick Douglass</h6>
+                                        <p class="mb-1 pb-3">Frederick Douglass</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-100 d-md-none mb-3"></div>
+
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/apsley-cherry-garrard_the-worst-journey-in-the-world.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">The Worst Journey in the
+                                            World</h6>
+                                        <p class="mb-1 pb-3">Apsley Cherry-Garrard</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card size-fixed">
+                                    <img alt="" class="img-fluid"
+                                         src="./assets/images/bookcovers/okakura-kakuzo_the-book-of-tea.jpg">
+                                    <div class="card-body pt-0">
+                                        <h6 class="card-title my-1 font-weight-bold">The Book of Tea</h6>
+                                        <p class="mb-1 pb-3">Okakura Kakuzō</p>
+                                        <div class="d-flex justify-content-between align-items-end">
+
+                                            <a class="p-1 d-inline-block border">
+                                                <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                     viewBox="0 0 16 16" width="1em"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                            fill-rule="evenodd"/>
+                                                    <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                          fill-rule="evenodd"/>
+                                                </svg>
+                                            </a>
+                                            <span class="float-right align-content-end mt-4">$2</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-lg-1"><a class="carousel-control-next" data-slide="next"
+                                                           href="#non-fiction"
+                                                           role="button">
+                    <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                    <span class="sr-only">Next</span>
+                </a></div>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="dep-name">Drama</h3>
+                <div class="carousel slide row" data-ride="drama" id="drama">
+                    <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev"
+                                                               href="#drama"
+                                                               role="button">
+                        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a></div>
+                    <div class="col-lg-10">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+
+                                <div class="card-deck row" id="deck5">
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/karel-capek_r-u-r_paul.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">R.U.R.</h6>
+                                            <p class="mb-1 pb-3">Karel Čapek</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/oscar-wilde_the-importance-of-being-earnest.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">The Importance of Being
+                                                Earnest</h6>
+                                            <p class="mb-1 pb-3">Oscar Wilde</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 d-md-none mb-3"></div>
+
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/tom-taylor_our-american-cousin.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">Our American Cousin</h6>
+                                            <p class="mb-1 pb-3">Tom Taylor</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/william-congreve_the-way-of-the-world.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">The Way of the World</h6>
+                                            <p class="mb-1 pb-3">William Congreve</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card-deck row" id="deck6">
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/william-shakespeare_the-comedy-of-errors.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">The Comedy of Errors</h6>
+                                            <p class="mb-1 pb-3">William Shakespeare</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/william-shakespeare_the-tempest.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">The Tempest</h6>
+                                            <p class="mb-1 pb-3">William Shakespeare</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$7</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-100 d-md-none mb-3"></div>
+
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/william-shakespeare_henry-v.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">Henry V</h6>
+                                            <p class="mb-1 pb-3">William Shakespeare</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card size-fixed">
+                                        <img alt="" class="img-fluid"
+                                             src="./assets/images/bookcovers/william-shakespeare_the-merry-wives-of-windsor.jpg">
+                                        <div class="card-body pt-0">
+                                            <h6 class="card-title my-1 font-weight-bold">The Merry Wives of Windsor</h6>
+                                            <p class="mb-1 pb-3">William Shakespeare</p>
+                                            <div class="d-flex justify-content-between align-items-end">
+
+                                                <a class="p-1 d-inline-block border">
+                                                    <svg class="bi bi-cart-plus" fill="currentColor" height="1em"
+                                                         viewBox="0 0 16 16" width="1em"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                                                fill-rule="evenodd"/>
+                                                        <path d="M8.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 .5-.5z"
+                                                              fill-rule="evenodd"/>
+                                                    </svg>
+                                                </a>
+                                                <span class="float-right align-content-end mt-4">$2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block col-lg-1"><a class="carousel-control-next" data-slide="next"
+                                                               href="#drama"
+                                                               role="button">
+                        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
