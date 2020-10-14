@@ -1,108 +1,107 @@
 body {
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
 }
 
 .navbar {
-    background-color: #383838;
-    color: #888;
+  background-color: #383838;
+  color: #888;
 }
 
 .nav-link {
-    color: #fff;
+  color: #fff;
 }
 
 .nav-link:hover {
-    color: #d35266;
+  color: #d35266;
 }
 
 .navbar-brand {
-    color: #d35266;
+  color: #d35266;
 }
 
 .navbar-brand:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-toggler svg {
-    fill: #fff;
+  fill: #fff;
 }
 
 .navbar-toggler {
-    border: 1px solid #888;
+  border: 1px solid #888;
 }
 
 .btn-outline-danger {
-    border-color: #d35266;
-    color: #d35266;
+  border-color: #d35266;
+  color: #d35266;
 }
 
 .btn-outline-danger:hover {
-    border-color: #d35266;
-    background: #d35266;
+  border-color: #d35266;
+  background: #d35266;
 }
 
 input[type=search] {
-    width: 400px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+  width: 400px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 /* When the input field gets focus, change its width to 100% */
 input[type=search]:focus {
-    width: 90%;
+  width: 90%;
 }
 
 .jumbotron {
-    background-image: url("../assets/images/jumbotron-back.png");
-    background-position: 5%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #d35266;
-    background-blend-mode: color-burn;
-    color: #fff;
-    font-weight: 700;
-    text-shadow: 1px 1px #383838;
+  background-image: url("../assets/images/jumbotron-back.png");
+  background-position: 5%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #d35266;
+  background-blend-mode: color-burn;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 1px 1px #383838;
 }
 
 .carousel-item {
-    background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .carousel-image {
-    width: 100vw;
-    height: 500px;
-    object-fit: cover;
-    opacity: 0.5;
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.5;
 }
 
 .carousel-caption {
-    background-color: rgba(136, 136, 136, 0.7);
+  background-color: rgba(136, 136, 136, 0.7);
 }
 
 .carousel-control-prev-icon {
-    background-image: url("../assets/images/prev.svg");
+  background-image: url("../assets/images/prev.svg");
 }
 
 .carousel-control-next-icon {
-    background-image: url("../assets/images/next.svg");
+  background-image: url("../assets/images/next.svg");
 }
 
-
 @media screen and (min-width: 768px) {
-    .size-fixed {
-        height: 500px;
-    }
+  .size-fixed {
+    height: 500px;
+  }
 }
 
 .author {
-    color: #888;
-    font-weight: 400;
+  color: #888;
+  font-weight: 400;
 }
 
 .footer-menu .nav-link {
-    color: #383838;
+  color: #383838;
 }
 
 .footer-menu .nav-link:hover {
-    color: #d35266;
+  color: #d35266;
 }
