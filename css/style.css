@@ -53,7 +53,12 @@ input[type=search]:focus {
 }
 
 .jumbotron {
+    background-image: url("../assets/images/jumbotron-back.png");
+    background-position: 5%;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: #d35266;
+    background-blend-mode: color-burn;
     color: #fff;
     font-weight: 700;
     text-shadow: 1px 1px #383838;
