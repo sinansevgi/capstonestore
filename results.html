@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Books and Scrolls</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fonts.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/flags.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header class="font-gotham">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand font-gotham-bold" href="#">
+            <svg class="bi bi-book" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path
+                        d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                        fill-rule="evenodd"/>
+            </svg>
+            Books and Scrolls</a>
+        <button aria-controls="navbarCollapsedMenu" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-target="#navbarCollapsedMenu" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"><svg class="bi bi-list" fill="#d35266" height="1em" viewbox="0 0 16 16"
+                                               width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                  fill-rule="evenodd"/>
+          </svg></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapsedMenu">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <svg class="bi bi-house-door" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                                  fill-rule="evenodd"/>
+                            <path d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <svg class="bi bi-tag-fill" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2v4.586l7 7L13.586 9l-7-7H2zM1 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2z"
+                                  fill-rule="evenodd"/>
+                            <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm0 1a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">
+                        <svg class="bi bi-cart" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                                  fill-rule="evenodd"/>
+                        </svg>
+                        Shopping Cart</a>
+                </li>
+            </ul>
+            <a class="btn btn-outline-danger float-right" href="#">Sign up</a>
+            <a class="btn btn-outline-danger float-right ml-2" href="#">Log in</a>
+
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="jumbotron jumbotron-fluid text-center mb-0 font-gotham-bold">
+        <h1>Books and Scrolls</h1>
+        <p>Welcome to Novigrads biggest bookstore.</p>
+        <form>
+            <div class="form-group">
+                <input class="form-control mx-auto"
+                       placeholder="Search Books, You can use book title, isbn, author or publisher to search books"
+                       type="search" value="William Shakespeare">
+                <button class="btn btn-lg btn-dark my-2 " type="submit">Search</button>
+            </div>
+        </form>
+    </section>
+    <section class="shop-content container py-3 font-helvetica">
+        <div class="row">
+            <div class="col-md-2 border-right d-md-block d-sm-flex flex-wrap">
+                <div class="col-form-label border-bottom w-100">
+                    Categories
+                </div>
+                <div class="form-check">
+                    <input checked class="form-check-input px-1" id="fiction" name="categories" type="radio"
+                           value="option1">
+                    <label class="form-check-label px-1" for="fiction">
+                        Fiction
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="nonfiction" name="categories" type="radio" value="option2">
+                    <label class="form-check-label px-1" for="nonfiction">
+                        Non-Fiction
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="drama" name="categories" type="radio" value="option2">
+                    <label class="form-check-label px-1" for="drama">
+                        Drama
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="comedy" name="categories" type="radio" value="option2">
+                    <label class="form-check-label px-1" for="comedy">
+                        Comedy
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="sci" name="categories" type="radio" value="option2">
+                    <label class="form-check-label px-1" for="sci">
+                        Sci-Fi
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="other" name="categories" type="radio" value="option2">
+                    <label class="form-check-label px-1" for="other">
+                        Other
+                    </label>
+                </div>
+                <div class="col-form-label border-top border-bottom my-2 w-100">
+                    Author
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="robert-stevenson" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="robert-stevenson">
+                        Robert Louis Stevenson
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="fyodor-sologub" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="fyodor-sologub">
+                        Fyodor Sologub
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="lewis-caroll" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="lewis-caroll">
+                        Lewis Caroll
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="oscar-wilde" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="oscar-wilde">
+                        Oscar Wilde
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="william-shakespeare" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="william-shakespeare">
+                        William Shakespeare
+                    </label>
+                </div>
+                <div class="col-form-label border-top border-bottom my-2 w-100">
+                    Publishers
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="m-press" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="m-press">
+                        Mountain Press
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="r-publishing" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="r-publishing">
+                        Rainbow Publishing
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="o-press" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="o-press">
+                        Oxford Press
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input px-1" id="c-books" type="checkbox" value="">
+                    <label class="form-check-label px-1" for="c-books">
+                        Cambridge Books
+                    </label>
+                </div>
+
+            </div>
+            <div class="col-md-10">
+                <div class="media border-bottom border-top my-3">
+                    <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25"
+                         src="./assets/images/bookcovers/william-shakespeare_the-merry-wives-of-windsor.jpg">
+                    <div class="media-body">
+                        <h5 class="mt-0">Merry Wives of Windsor</h5>
+                        <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+                        <h5 class="mt-0 font-helvetica-italic">Cambridge Books</h5>
+                        <p class="font-helvetica-light">First published in 1602 by William Shakespeare, The Merry Wives
+                            of Windsor features the popular figure Sir John Falstaff, who first appeared in Henry IV,
+                            Part 1 and Part 2. Some speculate that Merry Wives was written at the behest of Queen
+                            Elizabeth I, who wanted to see Falstaff in love; and that Shakespeare was forced to rush its
+                            creation as a result, and so it remains one of Shakespeare’s lesser-regarded plays.</p>
+                        <p class="font-helvetica-light">Sir Arthur Quiller-Couch and John Dover Wilson’s 1923 Cambridge
+                            edition.</p>
+                        <div class="float-right">
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-cart-plus-fill" fill="#fff" height="1em" viewbox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                                          fill-rule="evenodd"/>
+                                </svg>
+                                Add Cart
+                            </button>
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-credit-card-2-back-fill" fill="#fff" height="1em" viewBox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2z"
+                                          fill-rule="evenodd"/>
+                                    <path d="M0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                                </svg>
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="media border-bottom border-top my-3">
+                    <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25"
+                         src="./assets/images/bookcovers/william-shakespeare_henry-v.jpg">
+                    <div class="media-body">
+                        <h5 class="mt-0">Henry V</h5>
+                        <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+                        <h5 class="mt-0 font-helvetica-italic">Cambridge Books</h5>
+                        <p class="font-helvetica-light">Written by William Shakespeare around 1599, The Life of Henry
+                            the Fifth, more commonly known as Henry V, chronicles the later history of King Henry the
+                            Fifth of England and his efforts during Hundred Years’ War to reclaim disputed territories
+                            in France. The play starts with Henry’s claims to be the rightful heir to the French throne
+                            and, after his invasion of France, culminates with his famous and improbable victory at the
+                            Battle of Agincourt and the negotiation of the Treaty of Troyes.</p>
+                        <p class="font-helvetica-light">William George Clark and William Aldis Wright’s 1887 Cambridge
+                            edition.</p>
+                        <div class="float-right">
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-cart-plus-fill" fill="#fff" height="1em" viewbox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                                          fill-rule="evenodd"/>
+                                </svg>
+                                Add Cart
+                            </button>
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-credit-card-2-back-fill" fill="#fff" height="1em" viewBox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2z"
+                                          fill-rule="evenodd"/>
+                                    <path d="M0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                                </svg>
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="media border-bottom border-top my-3">
+                    <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25"
+                         src="./assets/images/bookcovers/william-shakespeare_the-tempest.jpg">
+                    <div class="media-body">
+                        <h5 class="mt-0">The Tempest</h5>
+                        <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+                        <h5 class="mt-0 font-helvetica-italic">Oxford Publishing</h5>
+                        <p class="font-helvetica-light">The Tempest, thought to be one of the last plays that
+                            Shakespeare wrote alone, begins with a storm which shipwrecks the king of Naples and his
+                            crew. We quickly learn that the tempest was not a natural occurence; it was created by
+                            Prospero, the usurped duke of Milan who is stranded on a nearby island, with the help of
+                            Ariel, a spirit in his service. The rest of the play explores the relationships between the
+                            shipwrecked crew, Prospero, his daughter Miranda, and a native of the island: a half human,
+                            half monster called Caliban.</p>
+                        <p class="font-helvetica-light">William George Clark and William Aldis Wright’s 1887 Oxford
+                            edition</p>
+                        <div class="float-right">
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-cart-plus-fill" fill="#fff" height="1em" viewbox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                                          fill-rule="evenodd"/>
+                                </svg>
+                                Add Cart
+                            </button>
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-credit-card-2-back-fill" fill="#fff" height="1em" viewBox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2z"
+                                          fill-rule="evenodd"/>
+                                    <path d="M0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                                </svg>
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="media border-bottom border-top my-3">
+                    <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25"
+                         src="./assets/images/bookcovers/william-shakespeare_the-comedy-of-errors.jpg">
+                    <div class="media-body">
+                        <h5 class="mt-0">Comedy of Errors</h5>
+                        <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+                        <h5 class="mt-0 font-helvetica-italic">Victoria Press</h5>
+                        <p class="font-helvetica-light">The Comedy of Errors is one of Shakespeare’s earliest and
+                            shortest plays. This comedy utilizes slapstick humor, word play, and mistaken identities to
+                            create a series of farcical accidents. Over time, the play’s title has become an idiom used
+                            to describe <q class="font-helvetica-italic">an event or series of events made ridiculous by
+                                the number of errors that were made throughout.</q></p>
+                        <p class="font-helvetica-light">William George Clark and William Aldis Wright’s 1887 Victoria
+                            edition.</p>
+                        <div class="float-right">
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-cart-plus-fill" fill="#fff" height="1em" viewbox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"
+                                          fill-rule="evenodd"/>
+                                </svg>
+                                Add Cart
+                            </button>
+                            <button class="btn btn-danger" type="button">
+                                <svg class="bi bi-credit-card-2-back-fill" fill="#fff" height="1em" viewBox="0 0 16 16"
+                                     width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2z"
+                                          fill-rule="evenodd"/>
+                                    <path d="M0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z"/>
+                                </svg>
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="company-info container-fluid border-top bg-clear p-5 font-helvetica">
+        <div class="row justify-content-between">
+            <div class="col-12 col-sm-4 text-center">
+                <h4 class="text-danger">
+                    <svg class="bi bi-book" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                                fill-rule="evenodd"/>
+                    </svg>
+                    Books and Scrolls
+                    <svg class="bi bi-book" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                                fill-rule="evenodd"/>
+                    </svg>
+                </h4>
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus
+                    dolorem labore nesciunt perferendis porro quis, quo saepe sint tenetur! Earum, esse natus?
+                    Consequuntur dolorem doloribus molestias officia
+                    quod, suscipit!</p>
+            </div>
+            <div class="col-12 col-sm-3">
+                <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Categories</h6>
+                <div class="nav footer-menu flex-column font-helvetica-light">
+                    <a class="nav-link" href="#">Fiction</a>
+                    <a class="nav-link" href="#">Non-Fiction</a>
+                    <a class="nav-link" href="#">Humour</a>
+                    <a class="nav-link" href="#">Drama</a>
+                    <a class="nav-link" href="#">Sci-Fi</a>
+                    <a class="nav-link" href="#">Fantasy</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3">
+                <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Site Links</h6>
+                <div class="nav footer-menu flex-column font-helvetica-light">
+                    <a class="nav-link" href="#">Home Page</a>
+                    <a class="nav-link" href="#">Categories</a>
+                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="#">Support</a>
+                    <a class="nav-link" href="#">Terms & Conditions</a>
+                </div>
+            </div>
+            <div class="d-none d-sm-block col-sm-2">
+                <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Language</h6>
+                <div class="dropdown text-center">
+                    <button aria-expanded="false" aria-haspopup="true" class="btn btn-danger dropdown-toggle w-100"
+                            data-toggle="dropdown" id="dropdownMenuButton" type="button">
+                        <span class="flag flag-us"> </span> English</a>
+                    </button>
+                    <div aria-labelledby="dropdownMenuButton" class="dropdown-menu w-100">
+                        <a class="dropdown-item" href="#tr"><span class="flag flag-tr"> </span> Turkish</a>
+                        <a class="dropdown-item" href="#fr"><span class="flag flag-us"> </span> French</a>
+                        <a class="dropdown-item" href="#it"><span class="flag flag-it"> </span> Italian</a>
+                        <a class="dropdown-item" href="#sp"><span class="flag flag-es"> </span> Spanish</a>
+                        <a class="dropdown-item" href="#ru"><span class="flag flag-fr"> </span> Russian</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="copyright border-top font-helvetica-light">
+    <div class="d-flex justify-content-center">
+        <p class="p-2 text-justify">Books and Scrolls Bookstore. Web design concept belongs to <a class="text-danger"
+                                                                                                  href="https://www.behance.net/gallery/24796463/ZATTIX">Mohammed
+            Awad</a></p>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
