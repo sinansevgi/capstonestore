@@ -31,6 +31,16 @@ body {
     border: 1px solid #888;
 }
 
+.btn-outline-danger {
+    border-color: #d35266;
+    color: #d35266;
+}
+
+.btn-outline-danger:hover {
+    border-color: #d35266;
+    background: #d35266;
+}
+
 input[type=search] {
     width: 400px;
     -webkit-transition: width 0.4s ease-in-out;
@@ -77,4 +87,17 @@ input[type=search]:focus {
     .size-fixed {
         height: 500px;
     }
+}
+
+.author {
+    color: #888;
+    font-weight: 400;
+}
+
+.footer-menu .nav-link {
+    color: #383838;
+}
+
+.footer-menu .nav-link:hover {
+    color: #d35266;
 }
