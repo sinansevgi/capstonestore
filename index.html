@@ -7,16 +7,16 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Books and Scrolls</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fonts.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link href="./css/flags.css" rel="stylesheet">
-
 
 </head>
 
 <body>
-<header>
+<header class="font-gotham">
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand font-gotham-bold" href="#">
             <svg class="bi bi-book" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em"
                  xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -74,28 +74,24 @@
     </nav>
 </header>
 <main>
-    <section class="jumbotron jumbotron-fluid text-center mb-0">
+    <section class="jumbotron jumbotron-fluid text-center mb-0 font-gotham-bold">
         <h1>Books and Scrolls</h1>
         <p>Welcome to Novigrads biggest bookstore.</p>
         <form>
             <div class="form-group">
                 <input class="form-control mx-auto"
-                       placeholder="Search Books, You can use book title, isbn, author or publisher to search books"
+                       placeholder="Search Books, You can use book title, isbn, font-helvetica-italic or publisher to search books"
                        type="search">
                 <button class="btn btn-lg btn-dark my-2 " type="submit">Search</button>
             </div>
         </form>
     </section>
-    <section class="container-fluid new border-bottom pb-5 bg-clear d-none d-md-block bg-white">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="text-danger">New Books:</h2>
-            </div>
-        </div>
-
-        <div class="row">
+    <section class="container-fluid new border-bottom pb-5 bg-clear d-none d-md-block bg-white font-helvetica">
+        <div class="row pt-2">
             <div class="col-md-1"></div>
             <div class="col-md-10">
+                <h2 class="text-danger"><span class="badge badge-danger">New Books:</span></h2>
+
                 <div class="carousel slide" data-ride="carousel" id="carouselNew">
                     <ol class="carousel-indicators">
                         <li class="active" data-slide-to="0" data-target="#carouselNew"></li>
@@ -146,10 +142,10 @@
         </div>
 
     </section>
-    <section class="shop-content container py-3">
+    <section class="shop-content container py-3 font-helvetica">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="dep-name my-3 border-bottom text-danger">Fiction</h3>
+                <h3 class="dep-name my-3 border-bottom font-gotham text-danger">Fiction</h3>
                 <div class="carousel slide row" data-ride="fiction" id="fiction">
                     <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev"
                                                                href="#fiction" role="button">
@@ -164,8 +160,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/robert-louis-stevenson_kidnapped.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Kidnapped</h6>
-                                            <p class="mb-1 pb-3 author">Robert Louis Stevenson</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Kidnapped</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Robert Louis Stevenson</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -186,8 +182,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/robert-louis-stevenson_treasure-island.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Treasure Island</h6>
-                                            <p class="mb-1 pb-3 author">Robert Louis Stevenson</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Treasure Island</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Robert Louis Stevenson</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -209,8 +205,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/fyodor-sologub_the-created-legend.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Created Legend</h6>
-                                            <p class="mb-1 pb-3 author">Fyodor Sologub</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Created Legend</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Fyodor Sologub</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -231,8 +227,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/fyodor-sologub_short-fiction.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Short Fiction</h6>
-                                            <p class="mb-1 pb-3 author">Fyodor Sologub</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Short Fiction</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Fyodor Sologub</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -258,8 +254,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/fyodor-sologub_the-little-demon.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Little Demon</h6>
-                                            <p class="mb-1 pb-3 author">Fyodor Sologub</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Little Demon</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Fyodor Sologub</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -280,8 +276,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/lewis-carroll_a-tangled-tale.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">A Tangled Tale</h6>
-                                            <p class="mb-1 pb-3 author">Lewis Caroll</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">A Tangled Tale</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Lewis Caroll</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -303,9 +299,9 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/lewis-carroll_alices-adventures-in-wonderland.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Alice's Adventures in
+                                            <h6 class="card-title my-1 font-helvetica-bold">Alice's Adventures in
                                                 Wonderland</h6>
-                                            <p class="mb-1 pb-3 author">Lewis Carroll</p>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Lewis Carroll</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -326,9 +322,9 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/selma-lagerlof_the-wonderful-adventures-of-nils.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Wonderful Adventures of
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Wonderful Adventures of
                                                 Nils</h6>
-                                            <p class="mb-1 pb-3 author">Selma Lagerlöf</p>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Selma Lagerlöf</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -361,7 +357,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h3 class="dep-name my-3 border-bottom text-danger">Non-Fiction</h3>
+                <h3 class="dep-name my-3 border-bottom font-gotham text-danger">Non-Fiction</h3>
                 <div class="carousel slide row" data-ride="non-fiction" id="non-fiction">
                     <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev"
                                                                href="#non-fiction" role="button">
@@ -379,8 +375,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/thomas-bulfinch_bulfinchs-mythology.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Bulfinch's Mythology</h6>
-                                            <p class="mb-1 pb-3 author">Thomas Bulfinch</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Bulfinch's Mythology</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Thomas Bulfinch</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -401,8 +397,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/lytton-strachey_queen-victoria.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Queen Victoria</h6>
-                                            <p class="mb-1 pb-3 author">Lytton Strachey</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Queen Victoria</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Lytton Strachey</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -424,8 +420,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/lytton-strachey_eminent-victorians.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Eminent Victorians</h6>
-                                            <p class="mb-1 pb-3 author">Lytton Strachey</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Eminent Victorians</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Lytton Strachey</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -447,9 +443,10 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/benjamin-franklin_the-autobiography-of-benjamin-franklin.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Autobiography of Benjamin
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Autobiography of
+                                                Benjamin
                                                 Franklin</h6>
-                                            <p class="mb-1 pb-3 author">Benjamin Franklin</p>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Benjamin Franklin</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -478,9 +475,9 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/julius-caesar_commentaries-on-the-gallic-war.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Commentaries on the Gallic
+                                            <h6 class="card-title my-1 font-helvetica-bold">Commentaries on the Gallic
                                                 War</h6>
-                                            <p class="mb-1 pb-3 author">Julius Caesar</p>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Julius Caesar</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -502,9 +499,9 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/frederick-douglass_narrative-of-the-life-of-frederick-douglass.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Narrative of the Life of
+                                            <h6 class="card-title my-1 font-helvetica-bold">Narrative of the Life of
                                                 Frederick Douglass</h6>
-                                            <p class="mb-1 pb-3 author">Frederick Douglass</p>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Frederick Douglass</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -528,9 +525,9 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/apsley-cherry-garrard_the-worst-journey-in-the-world.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Worst Journey in the
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Worst Journey in the
                                                 World</h6>
-                                            <p class="mb-1 pb-3 author">Apsley Cherry-Garrard</p>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Apsley Cherry-Garrard</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -552,8 +549,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/okakura-kakuzo_the-book-of-tea.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Book of Tea</h6>
-                                            <p class="mb-1 pb-3 author">Okakura Kakuzō</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Book of Tea</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Okakura Kakuzō</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -586,7 +583,7 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h3 class="dep-name my-3 border-bottom text-danger">Drama</h3>
+                <h3 class="dep-name my-3 border-bottom font-gotham text-danger">Drama</h3>
                 <div class="carousel slide row" data-ride="drama" id="drama">
                     <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev"
                                                                href="#drama" role="button">
@@ -602,8 +599,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/karel-capek_r-u-r_paul.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">R.U.R.</h6>
-                                            <p class="mb-1 pb-3 author">Karel Čapek</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">R.U.R.</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Karel Čapek</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -624,9 +621,9 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/oscar-wilde_the-importance-of-being-earnest.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Importance of Being
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Importance of Being
                                                 Earnest</h6>
-                                            <p class="mb-1 pb-3 author">Oscar Wilde</p>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Oscar Wilde</p>
                                             <div class="d-flex justify-content-between align-items-end">
                                                 <a class="p-1 d-inline-block border">
                                                     <svg class="bi bi-cart-plus" fill="#d35266" height="1em"
@@ -649,8 +646,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/tom-taylor_our-american-cousin.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Our American Cousin</h6>
-                                            <p class="mb-1 pb-3 author">Tom Taylor</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Our American Cousin</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">Tom Taylor</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -672,8 +669,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/william-congreve_the-way-of-the-world.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Way of the World</h6>
-                                            <p class="mb-1 pb-3 author">William Congreve</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Way of the World</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">William Congreve</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -702,8 +699,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/william-shakespeare_the-comedy-of-errors.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Comedy of Errors</h6>
-                                            <p class="mb-1 pb-3 author">William Shakespeare</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Comedy of Errors</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -725,8 +722,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/william-shakespeare_the-tempest.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Tempest</h6>
-                                            <p class="mb-1 pb-3 author">William Shakespeare</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Tempest</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -750,8 +747,8 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/william-shakespeare_henry-v.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">Henry V</h6>
-                                            <p class="mb-1 pb-3 author">William Shakespeare</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">Henry V</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -773,8 +770,9 @@
                                         <img alt="" class="img-fluid"
                                              src="./assets/images/bookcovers/william-shakespeare_the-merry-wives-of-windsor.jpg">
                                         <div class="card-body pt-0">
-                                            <h6 class="card-title my-1 font-weight-bold">The Merry Wives of Windsor</h6>
-                                            <p class="mb-1 pb-3 author">William Shakespeare</p>
+                                            <h6 class="card-title my-1 font-helvetica-bold">The Merry Wives of
+                                                Windsor</h6>
+                                            <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
                                             <div class="d-flex justify-content-between align-items-end">
 
                                                 <a class="p-1 d-inline-block border">
@@ -806,7 +804,7 @@
             </div>
         </div>
     </section>
-    <section class="company-info container-fluid border-top bg-clear p-5">
+    <section class="company-info container-fluid border-top bg-clear p-5 font-helvetica">
         <div class="row justify-content-between">
             <div class="col-12 col-sm-3 text-center">
                 <h4 class="text-danger">
@@ -830,8 +828,8 @@
                     quod, suscipit!</p>
             </div>
             <div class="col-12 col-sm-3">
-                <h6 class="border-bottom border-danger text-danger">Categories</h6>
-                <div class="nav footer-menu flex-column">
+                <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Categories</h6>
+                <div class="nav footer-menu flex-column font-helvetica-light">
                     <a class="nav-link" href="#">Fiction</a>
                     <a class="nav-link" href="#">Non-Fiction</a>
                     <a class="nav-link" href="#">Humour</a>
@@ -841,8 +839,8 @@
                 </div>
             </div>
             <div class="col-12 col-sm-3">
-                <h6 class="border-bottom border-danger text-danger">Site Links</h6>
-                <div class="nav footer-menu flex-column">
+                <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Site Links</h6>
+                <div class="nav footer-menu flex-column font-helvetica-light">
                     <a class="nav-link" href="#">Home Page</a>
                     <a class="nav-link" href="#">Categories</a>
                     <a class="nav-link" href="#">FAQ</a>
@@ -851,7 +849,7 @@
                 </div>
             </div>
             <div class="d-none d-sm-block col-sm-3">
-                <h6 class="border-bottom border-danger text-danger">Language</h6>
+                <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Language</h6>
                 <div class="dropdown text-center">
                     <button aria-expanded="false" aria-haspopup="true" class="btn btn-danger dropdown-toggle w-100"
                             data-toggle="dropdown" id="dropdownMenuButton" type="button">
@@ -872,7 +870,7 @@
 
 </main>
 
-<footer class="copyright border-top">
+<footer class="copyright border-top font-helvetica-light">
     <div class="d-flex justify-content-center">
         <p class="pt-2 text-justify">Books and Scrolls Bookstore. Web design concept belongs to <a class="text-danger"
                                                                                                    href="https://www.behance.net/gallery/24796463/ZATTIX">Mohammed
