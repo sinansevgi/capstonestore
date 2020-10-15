@@ -16,7 +16,7 @@
 <body>
   <header class="font-gotham">
     <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand font-gotham-bold" href="#">
+      <a class="navbar-brand font-gotham-bold" href="index.html">
         <svg class="bi bi-book" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
@@ -48,7 +48,7 @@
               Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">
+            <a class="nav-link" href="#">
               <svg class="bi bi-cart" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
@@ -69,8 +69,8 @@
       <p>Welcome to Novigrads biggest bookstore.</p>
       <form>
         <div class="form-group">
-          <input class="form-control mx-auto" placeholder="Search Books, You can use book title, isbn, author or publisher to search books" type="search" value="William Shakespeare">
-          <button class="btn btn-lg btn-dark my-2 " type="submit">Search</button>
+          <input class="form-control mx-auto" id="jumbosearch" placeholder="Search Books, You can use book title, isbn, author or publisher to search books" type="search">
+          <a class="btn btn-lg btn-dark my-2 " href="results.html">Search</a>
         </div>
       </form>
     </section>
@@ -179,11 +179,11 @@
 
         </div>
         <div class="col-md-10">
-          <div class="media border-bottom border-top my-3">
+          <div class="media border-bottom border-top py-2 my-3">
             <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25" src="./assets/images/bookcovers/william-shakespeare_the-merry-wives-of-windsor.jpg">
             <div class="media-body">
-              <h5 class="mt-0">Merry Wives of Windsor</h5>
-              <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+              <h2 class="mt-0">Merry Wives of Windsor</h2>
+              <h3 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h3>
               <h5 class="mt-0 font-helvetica-italic">Cambridge Books</h5>
               <p class="font-helvetica-light">First published in 1602 by William Shakespeare, The Merry Wives
                 of Windsor features the popular figure Sir John Falstaff, who first appeared in Henry IV,
@@ -213,11 +213,11 @@
               </div>
             </div>
           </div>
-          <div class="media border-bottom border-top my-3">
+          <div class="media border-bottom border-top py-2 my-3">
             <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25" src="./assets/images/bookcovers/william-shakespeare_henry-v.jpg">
             <div class="media-body">
-              <h5 class="mt-0">Henry V</h5>
-              <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+              <h2 class="mt-0">Henry V</h2>
+              <h3 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h3>
               <h5 class="mt-0 font-helvetica-italic">Cambridge Books</h5>
               <p class="font-helvetica-light">Written by William Shakespeare around 1599, The Life of Henry
                 the Fifth, more commonly known as Henry V, chronicles the later history of King Henry the
@@ -247,11 +247,11 @@
               </div>
             </div>
           </div>
-          <div class="media border-bottom border-top my-3">
+          <div class="media border-bottom border-top py-2 my-3">
             <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25" src="./assets/images/bookcovers/william-shakespeare_the-tempest.jpg">
             <div class="media-body">
-              <h5 class="mt-0">The Tempest</h5>
-              <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+              <h2 class="mt-0">The Tempest</h2>
+              <h3 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h3>
               <h5 class="mt-0 font-helvetica-italic">Oxford Publishing</h5>
               <p class="font-helvetica-light">The Tempest, thought to be one of the last plays that
                 Shakespeare wrote alone, begins with a storm which shipwrecks the king of Naples and his
@@ -282,11 +282,11 @@
               </div>
             </div>
           </div>
-          <div class="media border-bottom border-top my-3">
+          <div class="media border-bottom border-top py-2 my-3">
             <img alt="Merry Wives of Windsor Book Cover" class="align-self-start mr-3 img-fluid w-25" src="./assets/images/bookcovers/william-shakespeare_the-comedy-of-errors.jpg">
             <div class="media-body">
-              <h5 class="mt-0">Comedy of Errors</h5>
-              <h5 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h5>
+              <h2 class="mt-0">Comedy of Errors</h2>
+              <h3 class="mt-0 font-helvetica-italic text-danger">William Shakespeare</h3>
               <h5 class="mt-0 font-helvetica-italic">Victoria Press</h5>
               <p class="font-helvetica-light">The Comedy of Errors is one of Shakespeare’s earliest and
                 shortest plays. This comedy utilizes slapstick humor, word play, and mistaken identities to
@@ -315,9 +315,30 @@
               </div>
             </div>
           </div>
-
+          <div class="d-flex justify-content-center mt-4">
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link text-danger" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link text-danger" href="#">1</a></li>
+                <li class="page-item"><a class="page-link text-danger" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-danger" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link text-danger" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
+
     </section>
     <section class="company-info container-fluid border-top bg-clear p-5 font-helvetica">
       <div class="row justify-content-between">
@@ -335,10 +356,8 @@
                 fill-rule="evenodd" />
             </svg>
           </h4>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus
-            dolorem labore nesciunt perferendis porro quis, quo saepe sint tenetur! Earum, esse natus?
-            Consequuntur dolorem doloribus molestias officia
-            quod, suscipit!</p>
+          <p class="text-justify">Books and Scrolls is a two story bookstore in the eastern part of Hierarch Square, in the city center of Novigrad, and like the largest source of books in the city. Its owner and operator being Marcus Thaddeus Knut
+            Hodgson. You can order books online and receive it with Griffin express.</p>
         </div>
         <div class="col-12 col-sm-3">
           <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Categories</h6>
