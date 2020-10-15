@@ -16,7 +16,7 @@
 <body>
   <header class="font-gotham">
     <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand font-gotham-bold" href="#">
+      <a class="navbar-brand font-gotham-bold" href="index.html">
         <svg class="bi bi-book" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M1 2.828v9.923c.918-.35 2.107-.692 3.287-.81 1.094-.111 2.278-.039 3.213.492V2.687c-.654-.689-1.782-.886-3.112-.752-1.234.124-2.503.523-3.388.893zm7.5-.141v9.746c.935-.53 2.12-.603 3.213-.493 1.18.12 2.37.461 3.287.811V2.828c-.885-.37-2.154-.769-3.388-.893-1.33-.134-2.458.063-3.112.752zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapsedMenu">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="index.html">
               <svg class="bi bi-house-door" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" fill-rule="evenodd" />
                 <path d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" fill-rule="evenodd" />
@@ -48,7 +48,7 @@
               Categories</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">
+            <a class="nav-link" href="#">
               <svg class="bi bi-cart" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
@@ -69,7 +69,7 @@
       <p>Welcome to Novigrads biggest bookstore.</p>
       <form>
         <div class="form-group">
-          <input class="form-control mx-auto" placeholder="Search Books, You can use book title, isbn, author or publisher to search books" type="search">
+          <input class="form-control mx-auto" id="jumbosearch" placeholder="Search Books, You can use book title, isbn, author or publisher to search books" type="search">
           <a class="btn btn-lg btn-dark my-2 " href="results.html">Search</a>
         </div>
       </form>
@@ -130,22 +130,27 @@
     <section class="shop-content container py-3 font-helvetica">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="dep-name my-3 border-bottom font-gotham text-danger">Fiction</h3>
-          <div class="carousel slide row" data-ride="fiction" id="fiction">
-            <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev" href="#fiction" role="button">
-                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                <span class="sr-only">Previous</span>
-              </a></div>
-            <div class="col-lg-10">
+          <h3 class="dep-name my-3 border-bottom font-gotham text-danger"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hat-wizard" class="svg-inline--fa fa-hat-wizard fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 512 512">
+              <path fill="#d35266"
+                d="M496 448H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zm-304-64l-64-32 64-32 32-64 32 64 64 32-64 32-16 32h208l-86.41-201.63a63.955 63.955 0 0 1-1.89-45.45L416 0 228.42 107.19a127.989 127.989 0 0 0-53.46 59.15L64 416h144l-16-32zm64-224l16-32 16 32 32 16-32 16-16 32-16-32-32-16 32-16z">
+              </path>
+            </svg> Fiction</h3>
+          <div class="carousel slide row justify-content-center align-items-center" data-ride="fiction" id="fiction">
+            <a class="d-none d-lg-block" data-slide="prev" href="#fiction" role="button">
+              <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <div class="col-lg-11">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="card-deck row">
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/robert-louis-stevenson_kidnapped.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Kidnapped</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Robert Louis Stevenson</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/robert-louis-stevenson_kidnapped.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Kidnapped</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Robert Louis Stevenson</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -158,12 +163,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/robert-louis-stevenson_treasure-island.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Treasure Island</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Robert Louis Stevenson</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/robert-louis-stevenson_treasure-island.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Treasure Island</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Robert Louis Stevenson</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -176,13 +181,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-100 d-md-none mb-3"></div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/fyodor-sologub_the-created-legend.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Created Legend</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Fyodor Sologub</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="w-100 d-lg-none mb-3"></div>
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/fyodor-sologub_the-created-legend.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Created Legend</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Fyodor Sologub</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -195,12 +200,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/fyodor-sologub_short-fiction.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Short Fiction</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Fyodor Sologub</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/fyodor-sologub_short-fiction.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Short Fiction</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Fyodor Sologub</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -218,12 +223,12 @@
                 </div>
                 <div class="carousel-item">
                   <div class="card-deck row">
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/fyodor-sologub_the-little-demon.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Little Demon</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Fyodor Sologub</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/fyodor-sologub_the-little-demon.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Little Demon</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Fyodor Sologub</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -236,12 +241,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/lewis-carroll_a-tangled-tale.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">A Tangled Tale</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Lewis Caroll</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/lewis-carroll_a-tangled-tale.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">A Tangled Tale</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Lewis Caroll</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -254,14 +259,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-100 d-md-none mb-3"></div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/lewis-carroll_alices-adventures-in-wonderland.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Alice's Adventures in
+                    <div class="w-100 d-lg-none mb-3"></div>
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/lewis-carroll_alices-adventures-in-wonderland.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Alice's Adventures in
                           Wonderland</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Lewis Carroll</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Lewis Carroll</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -274,13 +279,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/selma-lagerlof_the-wonderful-adventures-of-nils.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Wonderful Adventures of
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/selma-lagerlof_the-wonderful-adventures-of-nils.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Wonderful Adventures of
                           Nils</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Selma Lagerlöf</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Selma Lagerlöf</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -298,35 +303,42 @@
                   </div>
                 </div>
               </div>
+
             </div>
-            <div class="d-none d-md-block col-lg-1"><a class="carousel-control-next" data-slide="next" href="#fiction" role="button">
-                <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                <span class="sr-only">Next</span>
-              </a></div>
+            <a class="d-none d-lg-block" data-slide="next" href="#fiction" role="button">
+              <span aria-hidden="true" class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h3 class="dep-name my-3 border-bottom font-gotham text-danger">Non-Fiction</h3>
-          <div class="carousel slide row" data-ride="non-fiction" id="non-fiction">
-            <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev" href="#non-fiction" role="button">
-                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                <span class="sr-only">Previous</span>
-              </a></div>
-            <div class="col-lg-10">
+          <h3 class="dep-name my-3 border-bottom font-gotham text-danger"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" class="svg-inline--fa fa-book-open fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 576 512">
+              <path fill="#d35266"
+                d="M542.22 32.05c-54.8 3.11-163.72 14.43-230.96 55.59-4.64 2.84-7.27 7.89-7.27 13.17v363.87c0 11.55 12.63 18.85 23.28 13.49 69.18-34.82 169.23-44.32 218.7-46.92 16.89-.89 30.02-14.43 30.02-30.66V62.75c.01-17.71-15.35-31.74-33.77-30.7zM264.73 87.64C197.5 46.48 88.58 35.17 33.78 32.05 15.36 31.01 0 45.04 0 62.75V400.6c0 16.24 13.13 29.78 30.02 30.66 49.49 2.6 149.59 12.11 218.77 46.95 10.62 5.35 23.21-1.94 23.21-13.46V100.63c0-5.29-2.62-10.14-7.27-12.99z">
+              </path>
+            </svg> Non-Fiction</h3>
+          <div class="carousel slide row justify-content-center align-items-center" data-ride="non-fiction" id="non-fiction">
+            <a class="d-none d-lg-block" data-slide="prev" href="#non-fiction" role="button">
+              <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <div class="col-lg-11">
+
               <div class="carousel-inner">
 
 
                 <div class="carousel-item active">
 
                   <div class="card-deck row">
-                    <div class=" card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/thomas-bulfinch_bulfinchs-mythology.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Bulfinch's Mythology</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Thomas Bulfinch</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/thomas-bulfinch_bulfinchs-mythology.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Bulfinch's Mythology</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Thomas Bulfinch</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -339,12 +351,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/lytton-strachey_queen-victoria.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Queen Victoria</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Lytton Strachey</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/lytton-strachey_queen-victoria.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Queen Victoria</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Lytton Strachey</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -357,13 +369,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-100 d-md-none mb-3"></div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/lytton-strachey_eminent-victorians.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Eminent Victorians</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Lytton Strachey</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="w-100 d-lg-none mb-3"></div>
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/lytton-strachey_eminent-victorians.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Eminent Victorians</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Lytton Strachey</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -377,14 +389,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/benjamin-franklin_the-autobiography-of-benjamin-franklin.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Autobiography of
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/benjamin-franklin_the-autobiography-of-benjamin-franklin.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Autobiography of
                           Benjamin
                           Franklin</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Benjamin Franklin</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Benjamin Franklin</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -405,13 +417,13 @@
                 </div>
                 <div class="carousel-item">
                   <div class="card-deck row">
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/julius-caesar_commentaries-on-the-gallic-war.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Commentaries on the Gallic
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/julius-caesar_commentaries-on-the-gallic-war.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Commentaries on the Gallic
                           War</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Julius Caesar</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Julius Caesar</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -425,13 +437,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/frederick-douglass_narrative-of-the-life-of-frederick-douglass.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Narrative of the Life of
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/frederick-douglass_narrative-of-the-life-of-frederick-douglass.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Narrative of the Life of
                           Frederick Douglass</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Frederick Douglass</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Frederick Douglass</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -445,15 +457,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-100 d-md-none mb-3"></div>
+                    <div class="w-100 d-lg-none mb-3"></div>
 
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/apsley-cherry-garrard_the-worst-journey-in-the-world.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Worst Journey in the
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/apsley-cherry-garrard_the-worst-journey-in-the-world.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Worst Journey in the
                           World</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Apsley Cherry-Garrard</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Apsley Cherry-Garrard</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -467,12 +479,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/okakura-kakuzo_the-book-of-tea.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Book of Tea</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Okakura Kakuzō</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/okakura-kakuzo_the-book-of-tea.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Book of Tea</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Okakura Kakuzō</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -491,32 +503,37 @@
                 </div>
               </div>
             </div>
-            <div class="d-none d-md-block col-lg-1"><a class="carousel-control-next" data-slide="next" href="#non-fiction" role="button">
-                <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                <span class="sr-only">Next</span>
-              </a></div>
+            <a class="d-none d-lg-block" data-slide="next" href="#non-fiction" role="button">
+              <span aria-hidden="true" class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <h3 class="dep-name my-3 border-bottom font-gotham text-danger">Drama</h3>
-          <div class="carousel slide row" data-ride="drama" id="drama">
-            <div class="d-none d-md-block col-lg-1"><a class="carousel-control-prev" data-slide="prev" href="#drama" role="button">
-                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-                <span class="sr-only">Previous</span>
-              </a></div>
-            <div class="col-lg-10">
+        <div class="col-lg-12">
+          <h3 class="dep-name my-3 border-bottom font-gotham text-danger"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sad-tear" class="svg-inline--fa fa-sad-tear fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewbox="0 0 496 512">
+              <path fill="#d35266"
+                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm80 168c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zM152 416c-26.5 0-48-21-48-47 0-20 28.5-60.4 41.6-77.8 3.2-4.3 9.6-4.3 12.8 0C171.5 308.6 200 349 200 369c0 26-21.5 47-48 47zm16-176c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm170.2 154.2C315.8 367.4 282.9 352 248 352c-21.2 0-21.2-32 0-32 44.4 0 86.3 19.6 114.7 53.8 13.8 16.4-11.2 36.5-24.5 20.4z">
+              </path>
+            </svg> Drama</h3>
+          <div class="carousel slide row justify-content-center align-items-center" data-ride="drama" id="drama">
+            <a class="d-none d-lg-block" data-slide="prev" href="#drama" role="button">
+              <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <div class="col-lg-11">
               <div class="carousel-inner">
                 <div class="carousel-item active">
 
                   <div class="card-deck row">
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/karel-capek_r-u-r_paul.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">R.U.R.</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Karel Čapek</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/karel-capek_r-u-r_paul.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">R.U.R.</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Karel Čapek</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -529,13 +546,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/oscar-wilde_the-importance-of-being-earnest.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Importance of Being
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/oscar-wilde_the-importance-of-being-earnest.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Importance of Being
                           Earnest</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Oscar Wilde</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Oscar Wilde</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
                               <path
@@ -548,14 +565,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-100 d-md-none mb-3"></div>
+                    <div class="w-100 d-lg-none mb-3"></div>
 
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/tom-taylor_our-american-cousin.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Our American Cousin</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">Tom Taylor</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/tom-taylor_our-american-cousin.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Our American Cousin</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">Tom Taylor</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -569,12 +586,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/william-congreve_the-way-of-the-world.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Way of the World</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">William Congreve</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/william-congreve_the-way-of-the-world.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Way of the World</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">William Congreve</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -595,12 +612,12 @@
                 </div>
                 <div class="carousel-item">
                   <div class="card-deck row">
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/william-shakespeare_the-comedy-of-errors.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Comedy of Errors</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/william-shakespeare_the-comedy-of-errors.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Comedy of Errors</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">William Shakespeare</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -614,12 +631,12 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/william-shakespeare_the-tempest.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Tempest</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/william-shakespeare_the-tempest.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Tempest</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">William Shakespeare</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -633,14 +650,14 @@
                         </div>
                       </div>
                     </div>
-                    <div class="w-100 d-md-none mb-3"></div>
+                    <div class="w-100 d-lg-none mb-3"></div>
 
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/william-shakespeare_henry-v.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">Henry V</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/william-shakespeare_henry-v.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">Henry V</h6>
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">William Shakespeare</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -654,13 +671,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="card size-fixed">
-                      <img alt="Book Cover" class="img-fluid" src="./assets/images/bookcovers/william-shakespeare_the-merry-wives-of-windsor.jpg">
-                      <div class="card-body pt-0">
-                        <h6 class="card-title my-1 font-helvetica-bold">The Merry Wives of
+                    <div class="card">
+                      <img alt="Book Cover" class="card-img-top" src="./assets/images/bookcovers/william-shakespeare_the-merry-wives-of-windsor.jpg">
+                      <div class="d-flex flex-column p-1">
+                        <h6 class="card-title font-helvetica-bold p-1 m-0 border-bottom d-flex align-items-center text-center justify-content-center">The Merry Wives of
                           Windsor</h6>
-                        <p class="mb-1 pb-3 font-helvetica-italic">William Shakespeare</p>
-                        <div class="d-flex justify-content-between align-items-end">
+                        <p class="font-helvetica-italic p-1 m-0 border-bottom text-center">William Shakespeare</p>
+                        <div class="d-flex justify-content-between align-items-end p-2">
 
                           <a class="p-1 d-inline-block border">
                             <svg class="bi bi-cart-plus" fill="#d35266" height="1em" viewbox="0 0 16 16" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -679,10 +696,10 @@
                 </div>
               </div>
             </div>
-            <div class="d-none d-md-block col-lg-1"><a class="carousel-control-next" data-slide="next" href="#drama" role="button">
-                <span aria-hidden="true" class="carousel-control-next-icon"></span>
-                <span class="sr-only">Next</span>
-              </a></div>
+            <a class="d-none d-lg-block" data-slide="next" href="#drama" role="button">
+              <span aria-hidden="true" class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
@@ -703,10 +720,8 @@
                 fill-rule="evenodd" />
             </svg>
           </h4>
-          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam delectus
-            dolorem labore nesciunt perferendis porro quis, quo saepe sint tenetur! Earum, esse natus?
-            Consequuntur dolorem doloribus molestias officia
-            quod, suscipit!</p>
+          <p class="text-justify">Books and Scrolls is a two story bookstore in the eastern part of Hierarch Square, in the city center of Novigrad, and like the largest source of books in the city. Its owner and operator being Marcus Thaddeus Knut
+            Hodgson. You can order books online and receive it with Griffin express.</p>
         </div>
         <div class="col-12 col-sm-3">
           <h6 class="border-bottom border-danger text-danger font-helvetica-bold">Categories</h6>

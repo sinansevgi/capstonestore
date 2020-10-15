@@ -8,7 +8,7 @@ body {
 }
 
 .nav-link {
-  color: #fff;
+  color: #888;
 }
 
 .nav-link:hover {
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-brand:hover {
-  color: #fff;
+  color: #888;
 }
 
 .navbar-toggler svg {
@@ -41,14 +41,14 @@ body {
   background: #d35266;
 }
 
-input[type=search] {
-  width: 400px;
+#jumbosearch {
+  width: 30%;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
 /* When the input field gets focus, change its width to 100% */
-input[type=search]:focus {
+#jumbosearch:focus {
   width: 90%;
 }
 
@@ -88,8 +88,8 @@ input[type=search]:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .size-fixed {
-    height: 500px;
+  .card-title {
+    height: 3rem;
   }
 }
 
@@ -104,4 +104,14 @@ input[type=search]:focus {
 
 .footer-menu .nav-link:hover {
   color: #d35266;
+}
+
+.fa-w-16 {
+  height: 1.5rem;
+}
+
+.page-link:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(211, 82, 102, 0.25);
 }

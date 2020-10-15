@@ -82,3 +82,9 @@
   font-family: 'helvetica', sans-serif;
   font-weight: 800;
 }
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
