@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'gotham';
+  src: url('../assets/fonts/GothamLight.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('../assets/fonts/GothamMedium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('../assets/fonts/GothamBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../assets/fonts/hnlight.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../assets/fonts/hnlightitalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../assets/fonts/hnmedium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'helvetica';
+  src: url('../assets/fonts/hnbold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+.font-gotham-light {
+  font-family: 'gotham', sans-serif;
+  font-weight: 200;
+}
+
+.font-gotham {
+  font-family: 'gotham', sans-serif;
+  font-weight: 400;
+}
+
+.font-gotham-bold {
+  font-family: 'gotham', sans-serif;
+  font-weight: 800;
+}
+
+.font-helvetica-light {
+  font-family: 'helvetica', sans-serif;
+  font-weight: 200;
+}
+
+.font-helvetica-italic {
+  font-family: 'helvetica', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.font-helvetica {
+  font-family: 'helvetica', sans-serif;
+  font-weight: 400;
+}
+
+.font-helvetica-bold {
+  font-family: 'helvetica', sans-serif;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
