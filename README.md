@@ -1,4 +1,3 @@
-![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Books and Scrolls Bookshop Online store
 
