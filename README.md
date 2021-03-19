@@ -1,8 +1,6 @@
-![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Books and Scrolls Bookshop Online store
 
-> This project made as Microverse HTML/CSS capstone project.
+> This is a html template for simple bookstore app
 
 ![screenshot](./assets/images/screenshot.jpg)
 
