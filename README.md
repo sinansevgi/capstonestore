@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://sinansevgi.github.io/capstonestore/)
+Test [Live Demo Link](https://sinansevgi.github.io/capstonestore/)
 
 
 ## Getting Started
